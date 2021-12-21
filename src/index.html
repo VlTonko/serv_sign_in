@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">Some header</header>
+      <div class="container">
+        <div class="title">Registration</div>
+          <div class="content">
+            <form id="myform">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">First Name</span>
+                  <input type="text" id="firstName" placeholder="Enter your first name" pattern="[A-z]{1,15}" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Last Name</span>
+                  <input type="text" id="lastName" placeholder="Enter your username" pattern="[A-z]{1,15}" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" id="email" placeholder="Enter your email" pattern="[^ @]*@[^ @]*" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Phone Number</span>
+                  <input type="text" id="phone" placeholder="+8 (097) 123-45-67" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Adress</span>
+                  <textarea id="textarea" placeholder="Enter your adress" pattern="[a-z]{1,15}"></textarea>
+                </div>
+              </div>
+              <div class="button">
+                <input type="submit" value="Send" id="btn">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">Some footer</footer>
+  </body>
+</html>
